@@ -67,8 +67,8 @@ st.all <- readRDS("E:/tbenhor/libraries/Documents/Astrid-16S-Session/Output/seqt
 seqtab <- removeBimeraDenovo(st.all, method="consensus", multithread=TRUE)
 
 # Assign taxonomy
-tax <- assignTaxonomy(seqtab, "E:/tbenhor/libraries/Documents/Oyster-Microbiota-Spring-Mortality/silva_nr_v132_train_set.fa.gz", multithread=TRUE)#get tax
-tax <- addSpecies(tax, "E:/tbenhor/libraries/Documents/Oyster-Microbiota-Spring-Mortality/silva_species_assignment_v132.fa.gz")
+tax <- assignTaxonomy(seqtab, "E:/tbenhor/libraries/Documents/Astrid-16S-Session/silva_nr_v132_train_set.fa.gz", multithread=TRUE)#get tax
+tax <- addSpecies(tax, "E:/tbenhor/libraries/Documents/Astrid-16S-Session/silva_species_assignment_v132.fa.gz")
 
 taxa.print <- tax # Removing sequence rownames for display only
 rownames(taxa.print) <- NULL
