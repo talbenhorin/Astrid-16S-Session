@@ -27,8 +27,8 @@ filterAndTrim(fwd=file.path(pathF, fastqFs), filt=file.path(filtpathF, fastqFs),
 
 # Infer sequence variants
 # File parsing
-filtpathF <- "fcutwater/filtered" # CHANGE ME to the directory containing your filtered forward fastqs
-filtpathR <- "rcutwater/filtered"
+filtpathF <- "Foyster/filtered" # CHANGE ME to the directory containing your filtered forward fastqs
+filtpathR <- "Royster/filtered"
 filtFs <- list.files(filtpathF, pattern="fastq.gz", full.names = TRUE)
 filtRs <- list.files(filtpathR, pattern="fastq.gz", full.names = TRUE)
 sample.names <- sapply(strsplit(basename(filtFs), "_"), `[`, 1) # Assumes filename = samplename_XXX.fastq.gz
