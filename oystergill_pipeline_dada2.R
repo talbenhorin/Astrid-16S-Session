@@ -69,6 +69,7 @@ seqtab <- removeBimeraDenovo(st.all, method="consensus", multithread=TRUE)
 # Assign taxonomy
 tax <- assignTaxonomy(seqtab, "E:/tbenhor/libraries/Documents/Oyster-Microbiota-Spring-Mortality/silva_nr_v132_train_set.fa.gz", multithread=TRUE)#get tax
 tax <- addSpecies(tax, "E:/tbenhor/libraries/Documents/Oyster-Microbiota-Spring-Mortality/silva_species_assignment_v132.fa.gz")
+a
 
 taxa.print <- tax # Removing sequence rownames for display only
 rownames(taxa.print) <- NULL
