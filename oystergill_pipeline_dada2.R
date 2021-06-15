@@ -75,5 +75,5 @@ rownames(taxa.print) <- NULL
 head(taxa.print)
 
 ## Save files
-saveRDS(seqtab, "E:/tbenhor/libraries/Documents/Astrid-16S-Session/Output/seqtab_cut_water_final.rds") 
-saveRDS(tax, "E:/tbenhor/libraries/Documents/Astrid-16S-Session/Output/tax_cut_water_final.rds") 
+saveRDS(seqtab, "E:/tbenhor/libraries/Documents/Astrid-16S-Session/Output/seqtab_final.rds") 
+saveRDS(tax, "E:/tbenhor/libraries/Documents/Astrid-16S-Session/Output/tax_final.rds") 
