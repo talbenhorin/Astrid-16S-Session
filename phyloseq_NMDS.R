@@ -12,12 +12,12 @@ library(Biostrings); packageVersion("Biostrings")
 library(ggplot2); packageVersion("ggplot2")
 theme_set(theme_bw())
 
-seqtab <- readRDS("output/seqtab_cut_final.rds")
-taxa <- readRDS("output/tax_cut_final.rds")
+seqtab <- readRDS("output/seqtab_final.rds")
+taxa <- readRDS("output/tax_final.rds")
 
 samples.out <- rownames(seqtab)
 
-sites <- read.csv("sites_cut.csv", fill = FALSE, header = TRUE) 
+sites <- read.csv("sites.csv", fill = FALSE, header = TRUE) 
 samdf <- data.frame(Event=sites$Site,Group=sites$Group,ID=sites$Sample) 
 rownames(samdf) <- samples.out
 
