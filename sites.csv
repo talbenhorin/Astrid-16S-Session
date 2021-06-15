@@ -1,0 +1,27 @@
+Sample,Group,Mort,Site
+BS10,Healthy,Control,BS
+BS11,Healthy,Control,BS
+BS3,Healthy,Control,BS
+BS4,Healthy,Control,BS
+BS6,Healthy,Control,BS
+BS8,Healthy,Control,BS
+BS9,Healthy,Control,BS
+NR10,Healthy,Impact,NR
+NR13,Gill Erosion,Impact,NR
+NR14,Gill Erosion,Impact,NR
+NR17,Gill Erosion,Impact,NR
+NR18,Healthy,Impact,NR
+NR19,Healthy,Impact,NR
+NR23,Gill Erosion,Impact,NR
+NR24,Gill Erosion,Impact,NR
+NR26,Healthy,Impact,NR
+NR3,Healthy,Impact,NR
+SC12,Healthy,Impact,SC
+SC18,Healthy,Impact,SC
+SC19,Gill Erosion,Impact,SC
+SC21,Gill Erosion,Impact,SC
+SC24,Gill Erosion,Impact,SC
+SC25,Healthy,Impact,SC
+SC27,Gill Erosion,Impact,SC
+SC3,Healthy,Impact,SC
+SC7,Healthy,Impact,SC
