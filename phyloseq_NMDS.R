@@ -44,15 +44,15 @@ keepTaxa = rownames(prevdf)[(prevdf$Prevalence >= prevalenceThreshold)]
 ps1 = prune_taxa(keepTaxa, ps)
 ps2 = tax_glom(ps1, "Genus", NArm = TRUE) #glom the pruned taxa 
 
-top50 <- names(sort(taxa_sums(ps2), decreasing=TRUE))[1:50]
-ps2.top50 <- transform_sample_counts(ps2, function(OTU) OTU/sum(OTU))
-ps2.top50 <- prune_taxa(top50, ps2.top50)
+top10 <- names(sort(taxa_sums(ps2), decreasing=TRUE))[1:10]
+ps2.top10 <- transform_sample_counts(ps2, function(OTU) OTU/sum(OTU))
+ps2.top10 <- prune_taxa(top10, ps2.top10)
 
 # Plots from refined databases
-plot_bar(ps2.top50, fill="Genus")
+plot_bar(ps2.top10, fill="Genus")
 
-ordu <- ordinate(ps2.top50, method = "PCoA", distance ="bray")
-p = plot_ordination(ps2.top50, ordu, color = "Event", shape = "Group")
+ordu <- ordinate(ps2.top10, method = "NMDS", distance ="bray")
+p = plot_ordination(ps2.top10, ordu, color = "Event", shape = "Group")
 p = p + geom_point(size=7, alpha=0.75)
 p = p + scale_colour_brewer(type="qual", palette="Set1")
 #p = p + geom_text(mapping = aes(label = samdf$ID), size = 4, vjust = 1.5) 
